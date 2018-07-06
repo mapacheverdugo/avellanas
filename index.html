@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <script src="assets/js/bideo.js"></script>
+  <script src="assets/js/main.js" charset="utf-8"></script>
+
+  <title>Avellanas | Lorem ipsum dolor sit amet</title>
+</head>
+<body>
+  <header id="header">
+    <div class="container">
+      <video id="background-video" loop muted></video>
+      <div id="video-cover"></div>
+      <div id="video-overlay"></div>
+
+      <div id="video-controls">
+        <span id="play">
+          <img src="assets/img/play.png">
+        </span>
+        <span id="pause">
+          <img src="assets/img/pause.png">
+        </span>
+      </div> <!-- video-controls -->
+
+      <nav>
+        <div class="logo">
+          <p>Avellanas</p>
+        </div> <!-- logo -->
+        <ul>
+          <li><a href="#">Productos</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Recetas</a></li>
+          <li><a href="#">Tutoriales</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a class="social facebook" href="https://www.facebook.com/avellanascl/">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a></li>
+          <li><a class="social instagram" href="https://www.instagram.com/avellanascl/">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a></li>
+          <li><a class="social twitter" href="https://www.twitter.com/avellanascl/">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a></li>
+        </ul>
+      </nav>
+
+      <div class="content">
+        <h1>Excepteur sint occaecat cupidatat non proident</h1>
+        <p>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <a href="#">Saber más</a>
+      </div> <!-- content -->
+    </div> <!-- container -->
+  </header>
+
+  <main id="main">
+    <section id="articulos">
+      <article>
+        <img src="" alt="">
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
+        <p><time datetime="2017-09-02">Sábado 2 de septiembre del 2017</time> en <a href="#">Categoria</a></p>
+        <p class="extracto">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </article>
+      <article>
+        <img src="" alt="">
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
+        <p><time datetime="2017-09-02">Sábado 2 de septiembre del 2017</time> en <a href="#">Categoria</a></p>
+        <p class="extracto">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </article>
+      <article>
+        <img src="" alt="">
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
+        <p><time datetime="2017-09-02">Sábado 2 de septiembre del 2017</time> en <a href="#">Categoria</a></p>
+        <p class="extracto">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </article>
+      <article>
+        <img src="" alt="">
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
+        <p><time datetime="2017-09-02">Sábado 2 de septiembre del 2017</time> en <a href="#">Categoria</a></p>
+        <p class="extracto">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </article>
+    </section>
+    <section id="instagram"></section>
+  </main>
+  <footer id="footer">
+    <section id="mapa"></section>
+    <span>Avellanas &copy 2017</span>
+  </footer>
+</body>
+<script type="text/javascript">
+  var bv = new Bideo();
+  bv.init({
+    videoEl: document.querySelector('#background-video'),
+    container: document.querySelector('#header.container'),
+    resize: true,
+    // autoplay: false,
+    isMobile: window.matchMedia('(max-width: 768px)').matches,
+    playButton: document.querySelector('#play'),
+    pauseButton: document.querySelector('#pause'),
+    src: [{
+        src: 'assets/img/cupcakes.mp4',
+        type: 'video/mp4'},
+      // {
+      //   src: 'assets/img/muffins.webm',
+      //   type: 'video/webm;codecs="vp8, vorbis"'
+      // }
+    ],
+    onLoad: function () {
+      document.querySelector('#video-cover').style.display = 'none';
+    }
+  });
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDg1TaZBAAmBSPWe8NswspP3WVaSZ5jVC4&callback=initGoogleMap"></script>
+</html>

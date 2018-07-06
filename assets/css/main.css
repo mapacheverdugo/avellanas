@@ -1,0 +1,165 @@
+#header {
+  height: 100vh;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+#header .container {
+  overflow: hidden;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+}
+
+#background-video {
+  position: absolute;
+
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+
+  object-fit: cover;
+  height: 100%; width: 100%;
+}
+
+#video-cover {
+  position: absolute;
+  width: 100%; height: 100%;
+
+  background: url('video-cover.jpeg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#video-controls {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#play img {
+  width: 100px;
+}
+#pause img {
+  width: 90px;
+}
+#pause {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #video-controls {
+    display: none;
+  }
+}
+
+#video-overlay {
+  position: absolute;
+  top: 0; right: 0; left: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#header .content, #header nav {
+  z-index: 2;
+  position: relative;
+}
+
+#header .content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 10em;
+  text-align: center;
+}
+
+#header nav {
+  padding: 10px 5em;
+}
+
+#header nav * {
+  display: inline-block;
+}
+
+#header nav .logo p {
+  font-size: 26px;
+  font-family: sans-serif;
+  padding: 0 20px;
+  margin: 0;
+}
+
+#header nav ul {
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+
+#header nav ul li {
+  list-style: none;
+}
+
+#header nav ul li a {
+  display: block;
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+#header nav ul li a.social {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 8px 10px;
+  width: 39px;
+  font-size: 20px;
+}
+
+#header nav ul li a.facebook {padding: 10px 8px 6px 8px;}
+#header nav ul li a.instagram {padding: 8px 9px 8px 7px;}
+#header nav ul li a.twitter {padding: 8px 7px 8px 9px;}
+
+#header nav ul li a.social:hover {
+  background: #fff;
+  border-radius: 50%;
+}
+
+#header nav ul li a.facebook:hover {background: #3b5998}
+#header nav ul li a.instagram:hover {background: #e1306c}
+#header nav ul li a.twitter:hover {background: #1da1f2}
+
+#header nav ul li a:hover {
+  font-weight: bold;
+}
+
+#header h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#header .content p {
+  font-family: 'Roboto', sans-serif;
+  padding: 0 2em;
+}
+
+#header .content a {
+  display: inline-block;
+  padding: 10px 30px;
+  border: 2px solid #fff;
+  border-radius: 21px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+#header .content a:hover {
+  background: #009688;
+  padding: 12px 32px;
+  border: none;
+}
+
+#mapa {
+ height: 400px;
+ width: 100%;
+}
